@@ -78,6 +78,15 @@ function draw() {
     }
   }
   pop();
+
+  // 在畫布上方置中繪製標題文字
+  fill(0); // 設定文字顏色為黑色
+  noStroke();
+  textAlign(CENTER, TOP); // 設定對齊方式為置中、靠上對齊
+  textSize(32); // 設定第一行文字大小
+  text("414730936 陸柏安", width / 2, 30);
+  textSize(24); // 設定第二行文字大小
+  text("作品為影像辨識_耳環臉譜", width / 2, 70);
 }
 
 function windowResized() {
